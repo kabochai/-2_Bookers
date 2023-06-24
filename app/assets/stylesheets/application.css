@@ -17,6 +17,100 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: verdana, arial, helvetica, sans-serif;
 }
 
+h1, p,table, h2, label, ul, a, .flash-message{
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+}
+
+h1{
+  font-size: 26px;
+  margin: 17.42px 0;
+}
+
+body, p, ul{
+  margin: 33px;
+}
+
+.notice{
+  color: #008000;
+}
+
+th{
+  padding: 1px 1px 5px;
+}
+
+td{
+  text-align:left;
+  padding:1px 5px 7px;
+}
+
+h2{
+  margin: 16.185px 0;
+  font-size: 19.5px;
+}
+
+.errors_box{
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px 7px 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+}
+
+.error{
+  font-size: 12px;
+  color: #FFF;
+  background-color: #C00;
+  padding: 5px 5px 5px 15px;
+  margin: -7px -7px 0;
+
+}
+
+ul{
+  padding-left: 40px;
+  font-size: 12px;
+  color: #333;
+}
+
+label{
+  display: block;
+}
+
+div.field_with_errors {
+background-color: red;
+padding: 2px;
+display: table;
+}
+
+
+.field, .actions{
+  margin-bottom: 10px;
+}
+
+.book_title{
+  padding: 1px 2px;
+}
+
+.book_body{
+  padding: 2px;
+}
+
+.submit{
+  padding: 1px 6px;
+}
+
+a{
+  color: #000;
+}
+
+a:visited{
+  color: #666;
+}
+
+a:hover{
+  background-color: #000;
+  color: #fff;
+}

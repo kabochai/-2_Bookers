@@ -2,18 +2,22 @@
 
 <%= form_with model: @book do |f| %>
 
-  <p>Title</p>
-  <%= f.text_field :title %>
+  <div class="field">
+    <%= f.label :title %>
+    <%= f.text_field :title, class: "book_title" %>
+  </div>
 
-  <p>Body</p>
-  <%= f.text_area :body %>
+  <div class="field">
+    <%= f.label :body %>
+    <%= f.text_area :body, class: "book_body" %>
+  </div>
 
-  <%= f.submit 'Update Book' %>
+  <div class="actions">
+    <%= f.submit 'Update Book', class: "submit" %>
+  </div>
 
 <% end %>
 
-<p>
-  <span><%= link_to "Show", book_path(@book.id) %></span>
-  <span> | </span>
-  <span><%= link_to "Back", books_path %></span>
-</p>
+<%= link_to "Show", book_path(@book.id) %>
+ |
+<%= link_to "Back", books_path %>
